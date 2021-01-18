@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.4.2'
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.4.2'
+    testImplementation group: 'com.tngtech.archunit', name: 'archunit-junit5', version: '0.15.0'
+}
